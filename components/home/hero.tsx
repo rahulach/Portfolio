@@ -153,7 +153,7 @@ export function Hero() {
                   alt="Rahul Acharya"
                   fill
                   unoptimized
-                  className="object-cover"
+                  className="object-cover object-top"
                   priority
                   sizes="(max-width: 768px) 100vw, 400px"
                 />
