@@ -12,10 +12,9 @@ import { getIconComponent } from "@/lib/icons";
 import { StarHeader } from "@/components/shared/star-header";
 
 const displayedSkills = [
-  "Software Engineer",
-  "Full Stack Developer",
-  "Blockchain Builder",
-  "Systems Thinker",
+  "Data Scientist",
+  "Data Analyst",
+  "ML Enthusiast",
 ];
 
 export function Hero() {
