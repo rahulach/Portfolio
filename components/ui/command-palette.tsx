@@ -86,7 +86,7 @@ export function CommandPalette() {
   );
 
   const filteredSocialLinks = socialLinks.filter((item) =>
-    item.name.toLowerCase().includes(search.toLowerCase())
+    item.id !== "linkedin" && item.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (

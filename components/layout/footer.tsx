@@ -23,7 +23,7 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Rahul Acharya</h3>
             <p className="max-w-xs text-sm text-muted-foreground">
-              Software Engineer with expertise in C++, Java, and Python. B.Tech CS at Lovely Professional University.
+              Software Engineer with expertise in C++, Java, and Python. B.Tech CSE at Lovely Professional University.
             </p>
           </div>
 

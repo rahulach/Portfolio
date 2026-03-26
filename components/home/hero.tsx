@@ -39,7 +39,7 @@ export function Hero() {
       <section className="relative flex min-h-[calc(100vh-4rem)] items-center py-12">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
-            <motion.div className="flex flex-col justify-center space-y-4" style={{ y: y1 }}>
+            <motion.div className="flex flex-col justify-center space-y-4 lg:pl-12 xl:pl-20" style={{ y: y1 }}>
               <div className="space-y-2">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}

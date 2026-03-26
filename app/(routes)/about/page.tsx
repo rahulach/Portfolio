@@ -48,23 +48,7 @@ export default function AboutPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <h2 className="mb-4 text-2xl font-bold">Who I Am</h2>
-              <Card>
-                <CardContent className="space-y-4 p-6 leading-relaxed">
-                  <p>
-                    I&apos;m Rahul Acharya, a software engineer pursuing a Bachelor of Technology in
-                    Computer Science and Engineering at Lovely Professional University. I specialize in building
-                    robust software applications using diverse set of technologies, ranging from desktop applications using Java
-                    to NLP systems using Python.
-                  </p>
-                  <p>
-                    My technical toolkit includes C, C++, Java, and Python. I enjoy problem-solving on platforms like
-                    Leetcode and GeeksForGeeks. Always eager to take on new projects and deliver impactful results.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <h2 className="mt-8 mb-4 text-2xl font-bold">Education</h2>
+              <h2 className="mb-4 text-2xl font-bold">Education</h2>
               <div className="space-y-4">
                 {education.map((edu) => (
                   <Card key={edu.id}>

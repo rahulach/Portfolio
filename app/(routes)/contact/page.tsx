@@ -54,7 +54,7 @@ export default function ContactPage() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col space-y-6">
-                {socialLinks.map((social, index) => (
+                {socialLinks.filter(s => s.id !== "linkedin").map((social, index) => (
                   <motion.a
                     key={social.id}
                     initial={{ opacity: 0, y: 10 }}

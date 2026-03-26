@@ -28,17 +28,20 @@ export function FeaturedProjects() {
             </p>
           </motion.div>
           <div className="grid w-full grid-cols-1 gap-6 text-left md:grid-cols-2 lg:grid-cols-3">
-            {featuredProjects.map((project, index) => (
+            {featuredProjects.map((project, index) => {
+              const slideFromLeft = index % 2 === 0;
+              return (
               <motion.div
                 key={project.id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.1 * index }}
+                initial={{ opacity: 0, x: slideFromLeft ? -150 : 150 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: false, amount: 0.1 }}
+                transition={{ duration: 0.6, type: "spring", stiffness: 80, damping: 15 }}
               >
                 <ProjectCard project={project} priority={index === 0} />
               </motion.div>
-            ))}
+              );
+            })}
           </div>
           <Button asChild variant="outline" className="mt-8">
             <Link href="/projects">
